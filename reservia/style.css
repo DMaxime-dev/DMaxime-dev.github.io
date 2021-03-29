@@ -1,0 +1,104 @@
+body{
+    background-color: white;
+    color: black;
+    font-family: raleway;
+    font-size: 1em;
+}
+header{
+    margin: 0px;
+    padding: auto;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 60px;
+    height: 40px;
+}
+.search{
+    width: 200px;
+    height: 40px;
+}
+.bouton {
+    background-color: #0065FC;
+    color: white;
+    width: 110px;
+    height: 40px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+ .menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+
+
+
+}
+.eco{
+    border: solid;
+    border-color:#F2F2F2 ;
+    padding: auto;
+}
+.lien{
+    text-decoration: none;
+    padding-top : 45px;
+  
+   
+}
+.image {
+    width: 250px;
+    height: 120px;
+    border-radius: 30px 30px 0 0;
+}
+.paver {
+    border: solid;
+    border-radius: 30px;
+    border-color: white;
+    margin: 20px;
+}
+.hébergements {
+    width: 900Px;
+    height: 600px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    border-radius: 40px;
+    
+}
+.mvp{
+    background-color:#F2F2F2 ;
+    width: 460px;
+
+}
+
+.image2{
+    width: 250px;
+    height: 120px;
+    border-radius: 30px 30px 0 0;
+
+}
+.filtre{
+    display: flex;
+    justify-content:flex-start;
+    list-style: none;
+    text-decoration:none;
+
+
+   
+
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    
+}
+.premier{
+    display: flex;
+    flex-wrap: nowrap;
+   
+}
