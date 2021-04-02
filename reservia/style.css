@@ -30,23 +30,20 @@ header a{
 .lien{text-decoration: none;
     padding-top: 0px;}
 .lien2{
-        text-decoration: none;
-        padding-top : 45px;
-        color: #0065FC;
-        font-weight: bold;}
+    text-decoration: none;
+    padding-top : 45px;
+    color: #0065FC;
+    font-weight: bold;}
 
 /* barre de recherche */
 
-h1{
-    margin-left: 30px;
-    }
+h1{margin-left: 30px;}
 h5{
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 10px;}
 .centreville{
-    margin-left: 30px;
-}
+    margin-left: 30px;}
 .espaceRecherche{
     display: flex;
     flex-wrap: nowrap;
@@ -57,6 +54,15 @@ h5{
     height: 40px;
     margin-left: 0px;
     margin-right: 0px;}
+form i {
+    background-color: #F2F2F2;
+    width: 30px;
+    height: 25px;
+    border-radius: 10px 0 0 10px;
+    padding-left: 24px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
 .bouton {
     background-color: #0065FC;
     color: white;
@@ -67,6 +73,9 @@ h5{
 
 /* filtre de navigation */
 
+nav a{
+    text-decoration: none;
+    list-style: none;}
 .blocdiv{
     display: flex;
     flex-direction: row;
@@ -76,6 +85,17 @@ h5{
     justify-content:flex-start;
     list-style: none;
     width: 70%;}
+ul i {
+    background-color: #DEEBFF;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    color:#0065FC ;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.item{
+    color:red;}
 .fi{
     color: black;
     font-weight: bold;
@@ -120,130 +140,19 @@ h5{
     margin-left: 30px;
     margin-top: 30px;
     background-color: #f2f2f2;
-    border-radius: 15px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-form i {
-    background-color: #F2F2F2;
-    width: 30px;
-    height: 25px;
-    border-radius: 10px 0 0 10px;
-    padding-left: 24px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-ul i {
-    background-color: #DEEBFF;
-    width: 30px;
-    height: 30px;
-    border-radius: 20px;
-    color:#0065FC ;
-    padding-left: 15px;
-    padding-top: 10px;
-}
-
-
-
-
-h2{
-    margin-left: 30px;
-    padding: 0px;
-    font-weight: bold;
-}
-h3 {
-    margin: 0px;
-    padding: 0px;
-    font-weight: bold;
-}
-
-
-
-.prix{
-    margin-bottom: 60px;
-}
-.voirplus{
-    padding: 0px;
-    margin-left: 25px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-.paver:hover{
-    background-color: #f1eeee;
-}
-.paver2:hover{
-    background-color: #f1eeee;
-}
-.verti:hover{
-    background-color: #f1eeee;
-}
-.vertical:hover{
-    background-color: #f1eeee;
-}
-
-
-figcaption i {
-    color: #0065FC;
-}
-
-.item{
-    color:red;
-  
-}
-
-.acmar{
-    margin-left: 30px;
-    margin-top: 60px;
-    margin-bottom: 10px ;
-    font-weight: bold;
-}
-figcaption{
+    border-radius: 15px;}
+.hébergements {
+    width: 900Px;
+    height: 520px;
+    display: flex;
+    flex-wrap:wrap;}
+.deuxieme{
+    display: flex;
+    flex-direction: row;
     margin-left: 20px;
-}
-
-
-
-.eco{
-    border: solid;
-    border-color:#F2F2F2 ;
-    padding: auto;
-}
-
-
-
-
-aside{
-    background-color: #f2f2f2;
-    width: 400px;
-    height: 650px;
-    border-radius: 20px;
-    margin-left: 40px;
-    margin-top: 30px;
-}
-.image {
-    width: 250px;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-}
+    margin-bottom: 0px;
+    height: 200px;
+    }
 .paver {
     border: solid;
     border-radius: 15px;
@@ -253,9 +162,54 @@ aside{
     padding: 0px;
     background-color: white;
     height: 210px;
-    box-shadow: 0px 5px 2px 1px #ecebeb;
+    box-shadow: 0px 5px 2px 1px #ecebeb;}
+.paver:hover{
+    background-color: #f1eeee;}
+.image{
+    width: 250px;
+    height: 120px;
+    border-radius: 15px 15px 0 0;}
+figcaption i {
+    color: #0065FC;}
+.trois{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 0px;
+    height: 200px;}
+h3{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;}
+.voirplus{
+    padding: 0px;
+    margin-left: 25px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: bold;}
 
-}
+/* deuxieme contenaire*/
+
+aside{
+    background-color: #f2f2f2;
+    width: 400px;
+    height: 650px;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 30px;}
+h2{
+    margin-left: 30px;
+    padding: 0px;
+    font-weight: bold;}
+.fa-chart-line{
+    color: black;
+     margin-left: 80px;}
+.mvp{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#F2F2F2 ;
+    width: 400px;
+    border-radius: 30px;}
 .paver2{
     display: flex;
     flex-direction: row;
@@ -265,48 +219,22 @@ aside{
     height: 150px;
     background-color: white;
     margin: 16px 20px;
-    box-shadow: 0px 5px 2px 1px #ecebeb;
-  
-}
-span{
-    font-weight: bold;
-}
-.fa-chart-line{
-    color: black;
-    margin-left: 80px;
-}
-.hébergements {
-    width: 900Px;
-    height: 520px;
-    display: flex;
-    flex-wrap:wrap;  
-}
-.deuxieme{
-    display: flex;
-    flex-direction: row;
-    margin-left: 20px;
-    margin-bottom: 0px;
-    height: 200px;
+    box-shadow: 0px 5px 2px 1px #ecebeb;}
+.paver2:hover{
+    background-color: #f1eeee;}
+.image2{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px 0 0 15px;}
+.prix{ margin-bottom: 60px;}
 
-}
-.trois{
-    display: flex;
-    flex-direction: row;
-    margin-left: 20px;
-    margin-top: 0px;
-    height: 200px;
-}
+/* section activités à Marseille*/
 
-.mvp{
-    display: flex;
-    flex-wrap: wrap;
-    background-color:#F2F2F2 ;
-    width: 400px;
-    border-radius: 30px;
-
-}
-
-
+.acmar{
+    margin-left: 30px;
+    margin-top: 60px;
+    margin-bottom: 10px ;
+    font-weight: bold;}
 .activites{
     display: flex;
     flex-wrap: nowrap;
@@ -314,50 +242,33 @@ span{
     width: 100%;
     height: auto;
     margin-bottom: 70px;
-    margin-left: 0px;
-}
-.img3{
-    width: 300px;
-    height: 370px;
-    border-radius:15px 15px 0 0;
-}
-
-
-.img4 {
-    height: 130px;
-    width: 250px;
-    border-radius: 15px 15px 0 0;
-}
-.horizontal{
-    display: flex;
-    flex-direction: column;
-}
+    margin-left: 0px;}
 .vertical{
     border-radius: 20px;
     border: 0px;
     height: 420px;
-    box-shadow: 0px 5px 2px 1px #F2F2F2;
-}
+    box-shadow: 0px 5px 2px 1px #F2F2F2;}
+.vertical:hover{
+    background-color: #f1eeee;}
+.img3{
+    width: 300px;
+    height: 370px;
+    border-radius:15px 15px 0 0;}
+.horizontal{
+    display: flex;
+    flex-direction: column;}
 .verti {
     border: 0px;
     border-radius: 15px;
-    box-shadow: 0px 5px 2px 1px #F2F2F2;
-
-
-}
-
-.image2{
-    width: 150px;
-    height: 150px;
-    border-radius: 15px 0 0 15px;
-
-}
-
-nav a{
-    text-decoration: none;
-    list-style: none;
-
-}
+    box-shadow: 0px 5px 2px 1px #F2F2F2;}
+.verti:hover{
+    background-color: #f1eeee;}
+.img4 {
+    height: 130px;
+    width: 250px;
+    border-radius: 15px 15px 0 0;}
+figcaption{
+    margin-left: 20px;}
 
 /* footer */
 
@@ -366,26 +277,20 @@ footer{
     justify-content: space-around;
     background-color: #f2f2f2;
     height: 200px;
-    width: 1370px;
-    
-}
+    width: 1370px;}
 footer nav {
     display: flex;
-    justify-content: space-around;
-}
-footer h4 {
+    justify-content: space-around;}
+footer h4{
     display: flex;
-    justify-content: space-around;
-}
-footer li {
-    list-style: none;
-    
-}
-footer a {
-    color: black;
-}
+    justify-content: space-around;}
+footer li{
+    list-style: none;}
+footer a{
+    color: black;}
 
 /* responsive très petite écran*/
+
 @media all and (min-width: 375px) and (max-width: 486px)
 {
     h1{
