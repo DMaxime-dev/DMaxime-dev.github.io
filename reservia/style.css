@@ -2,48 +2,58 @@ body{
     background-color:white;
     color: black;
     @font-family:"raleway";
-    font-size: 1em;}
+    font-size: 1em;
+    margin: 0px;}
 
 /* le header */
 
 header{
-    margin:0px;
-    padding: 0px;
-    height: 90 px;
+    margin:0;
+    padding:0;
+    height: 90px;
     display: flex;
     justify-content: space-between;
-    width: 1370px;}
+    width: 100%;}
 header a{
-    color: black;}
-.logo{
+    color: black;
+    width: 180px;
+    height: 80px;
+    text-align:center;
+    text-decoration: none;
+    padding-top: 45px;}
+header a:hover{ color: #0065FC;}  
+#logo{
     width: 90px;
     height: 50px;
+    margin-left: 30px;
+    padding-top: 30px;}
+#menu{
+    display: inline-flex;
     margin-left: 30px;}
-.menu{
-    display:flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0px;
-    width: 400px;}
-.effet:hover{
+.menu:hover{
     border-top: solid 3px #0065FC;}
-.lien{text-decoration: none;
-    padding-top: 0px;}
+.lien{
+    display: block;}
 .lien2{
     text-decoration: none;
-    padding-top : 45px;
     color: #0065FC;
+    font-weight: bold;
+    padding-top: 45px;
+    display: block;
     font-weight: bold;}
+.lien2:hover{ 
+    font-size: 1.2em ;}
 
 /* barre de recherche */
 
-h1{margin-left: 30px;}
+h1{margin: 30px 0 11px 30px;}
 h5{
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 10px;}
 .centreville{
-    margin-left: 30px;}
+    padding: 0;
+    margin: 0 0 30px 30px;}
 .espaceRecherche{
     display: flex;
     flex-wrap: nowrap;
@@ -61,8 +71,7 @@ form i {
     border-radius: 10px 0 0 10px;
     padding-left: 24px;
     padding-top: 10px;
-    padding-bottom: 5px;
-}
+    padding-bottom: 5px;}
 .bouton {
     background-color: #0065FC;
     color: white;
@@ -137,29 +146,31 @@ ul i {
 .section1{
     width: 900px;
     height: 650px;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin: auto;
+   
     background-color: #f2f2f2;
     border-radius: 15px;}
 .hébergements {
     width: 900Px;
     height: 520px;
     display: flex;
-    flex-wrap:wrap;}
+    flex-wrap:wrap;
+}
 .deuxieme{
     display: flex;
     flex-direction: row;
-    margin-left: 20px;
-    margin-bottom: 0px;
+    
     height: 200px;
-    }
+
+}
 .paver {
     border: solid;
     border-radius: 15px;
     border-color: white;
     margin-top: 10px;
-    margin-left: 3px;
-    padding: 0px;
+    margin-left: 30px;
+    margin-right: auto;
+    padding: auto;
     background-color: white;
     height: 210px;
     box-shadow: 0px 5px 2px 1px #ecebeb;}
@@ -174,7 +185,7 @@ figcaption i {
 .trois{
     display: flex;
     flex-direction: row;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 0px;
     height: 200px;}
 h3{
@@ -195,8 +206,7 @@ aside{
     width: 400px;
     height: 650px;
     border-radius: 20px;
-    margin-left: 40px;
-    margin-top: 30px;}
+    margin:auto}
 h2{
     margin-left: 30px;
     padding: 0px;
@@ -237,17 +247,20 @@ h2{
     font-weight: bold;}
 .activites{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: stretch;
     width: 100%;
     height: auto;
-    margin-bottom: 70px;
-    margin-left: 0px;}
+    margin: auto;
+}
 .vertical{
     border-radius: 20px;
     border: 0px;
     height: 420px;
-    box-shadow: 0px 5px 2px 1px #F2F2F2;}
+    box-shadow: 0px 5px 2px 1px #F2F2F2;
+    margin: auto;
+    padding: auto;
+}
 .vertical:hover{
     background-color: #f1eeee;}
 .img3{
@@ -256,11 +269,17 @@ h2{
     border-radius:15px 15px 0 0;}
 .horizontal{
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+    margin: auto;
+    padding: auto;
+}
 .verti {
     border: 0px;
     border-radius: 15px;
-    box-shadow: 0px 5px 2px 1px #F2F2F2;}
+    box-shadow: 0px 5px 2px 1px #F2F2F2;
+    margin: auto;
+    padding: auto;
+}
 .verti:hover{
     background-color: #f1eeee;}
 .img4 {
@@ -274,20 +293,22 @@ figcaption{
 
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     background-color: #f2f2f2;
     height: 200px;
-    width: 1370px;}
-footer nav {
-    display: flex;
-    justify-content: space-around;}
-footer h4{
-    display: flex;
-    justify-content: space-around;}
-footer li{
-    list-style: none;}
+    width: 100%;
+    margin: 60px 0 0 0;
+    padding:0px;}
+footer ul{
+    padding: 0px;
+}
 footer a{
+    display: flex;
+    flex-direction: column;
     color: black;}
+.bloc{
+    padding: auto;
+}  
 
 /* responsive très petite écran*/
 
