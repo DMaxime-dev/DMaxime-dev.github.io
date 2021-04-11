@@ -1,7 +1,7 @@
 body{
     background-color:white;
     color: black;
-    @font-family:"raleway";
+    font-family:"raleway";
     font-size: 1em;
     margin: 0px;}
 
@@ -21,7 +21,10 @@ header a{
     text-align:center;
     text-decoration: none;
     padding-top: 45px;}
-header a:hover{ color: #0065FC;}  
+header a:hover{ color: #0065FC;} 
+#mobile{
+    display: none;
+}
 #logo{
     width: 90px;
     height: 50px;
@@ -29,11 +32,14 @@ header a:hover{ color: #0065FC;}
     padding-top: 30px;}
 #menu{
     display: inline-flex;
-    margin-left: 30px;}
+    margin-left: 30px;}s
 .menu:hover{
-    border-top: solid 3px #0065FC;}
+    border-top:solid 3px #0065FC;}
 .lien{
     display: block;}
+.lien:hover{
+    border-top: solid 3px #0065FC;
+}
 .lien2{
     text-decoration: none;
     color: #0065FC;
@@ -64,6 +70,9 @@ h5{
     height: 40px;
     margin-left: 0px;
     margin-right: 0px;}
+.fa-search{
+    display: none;
+}
 form i {
     background-color: #F2F2F2;
     width: 30px;
@@ -88,20 +97,23 @@ nav a{
 .blocdiv{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;}
+    flex-wrap: wrap;
+    margin-left: 25px;
+}
 .filtre{
     display: flex;
     justify-content:flex-start;
     list-style: none;
     width: 70%;}
-ul i {
+.icone{
+    align-content: center;
     background-color: #DEEBFF;
-    width: 30px;
-    height: 30px;
+    width: 33px;
+    height: 28px;
     border-radius: 20px;
     color:#0065FC ;
-    padding-left: 15px;
-    padding-top: 10px;
+    padding:10px 0 0 10px;
+    margin: 0; 
 }
 .item{
     color:#F2F2F2;}
@@ -109,32 +121,38 @@ ul i {
     color: black;
     font-weight: bold;
     margin-top: 15px;}
-.margeul{
-    padding-left: 0px;}
-.log{
-    list-style: none;}
-.log {
-    border: solid;
-    border-color: #F2F2F2;
-    border-radius: 25px;
-    margin-left: 30px;
-    width: 200px;
-    height: 40px;
-    background-color: white;
-    color: black;}
-.log:hover{
-    background-color: rgb(193, 204, 204);}
+
 .ut{
+    border: solid 2px #D9D9D9;
+    border-radius: 28px;
+    margin:20px 11px;
+    width: 200px;
+    height: 30px;
+    background-color: white;
     color: black;
-    font-weight: bold;}
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 8px 8px 8px 0;
+}
+.ut:hover{
+    background-color: #F2F2F2;
+}
+.rt{
+    margin: 15px;
+    list-style: none;
+}
 .logtexte{
-    display: flex;
-    flex-direction: row;
-    margin-left: 30px;}
-.p500{
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    margin-left: 10px;}
+    margin: 10px 0 40px 30px;}
+
+.fa-info{
+    color: blue;
+    font-size: 0.7em;
+    border: solid 1px #F2F2F2;
+    padding: 7px 10px;
+    border-radius: 12px;
+}
+
 
 /* les cartes d'hébergement*/
 
@@ -147,19 +165,19 @@ ul i {
     width: 900px;
     height: 650px;
     margin: auto;
-   
     background-color: #f2f2f2;
     border-radius: 15px;}
 .hébergements {
     width: 900Px;
     height: 520px;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap:wrap;}
+.fa-star{
+    font-size: 0.7em;
 }
 .deuxieme{
     display: flex;
     flex-direction: row;
-    
     height: 200px;}
 .paver {
     border: solid;
@@ -249,23 +267,23 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: stretch;
-    width: 100%;
+    width: 98%;
     height: auto;
     margin: auto;
 }
 .vertical{
     border-radius: 20px;
     border: 0px;
-    height: 420px;
+    height: 400px;
     box-shadow: 0px 5px 2px 1px #F2F2F2;
-    margin: auto;
+    margin: 0 auto 20px auto;
     padding: auto;
 }
 .vertical:hover{
     background-color: #f1eeee;}
 .img3{
     width: 300px;
-    height: 390px;
+    height: 350px;
     border-radius:15px 15px 0 0;
     object-fit: cover;
 }
@@ -277,6 +295,7 @@ h4{
     display: flex;
     flex-direction: column;
     margin: 0 auto 0 auto;
+    height: 400px;
     padding: auto;
 }
 .verti {
@@ -295,11 +314,17 @@ h4{
     width: 300px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
-
+}
+.img5{
+    height: 130px;
+    width: 300px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
 }
 figcaption{
     margin-left: 20px;
-    height: 56px;
+    height: 30px;
+    
 }
 
 /* footer */
@@ -311,19 +336,21 @@ footer{
     height: 200px;
     width: 100%;
     margin: 60px 0 0 0;
-    padding:0px;}
+    padding:40px 0 0 0;}
 footer ul{
     padding: 0px;
 }
 footer a{
     display: flex;
     flex-direction: column;
-    color: black;}
+    color: black;
+    margin-bottom: 12px;
+}
 .bloc{
     padding: auto;
 }  
 
-/* responsive très petite écran*/
+/* responsive*/
 
 @media all and (min-width: 1100px) and (max-width: 1300px)
 {
@@ -333,23 +360,14 @@ footer a{
         @font-family:"raleway";
         font-size: 1em;
         margin: 0px;}
-    
-    /* le header */
-    
-    /* barre de recherche */
-    
-    
-    /* filtre de navigation */
-    
-    /* les cartes d'hébergement*/
-    
+
     .grosbloc{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: stretch;
         width: 100%;}
     .section1{
-        width: 100%;
+        width: 98%;
         height: 650px;
         margin: auto;
        
@@ -368,8 +386,6 @@ footer a{
         height: 200px;
         margin:0 auto;
         padding: auto;
-        
-    
     }
     .paver {
         border: solid;
@@ -412,10 +428,10 @@ footer a{
     
     aside{
         background-color: #f2f2f2;
-        width: 100%;
+        width: 98%;
         height: auto;
         border-radius: 20px;
-        margin:30px auto auto auto}
+        margin:30px auto}
     h2{
         margin-left: 30px;
         padding: 0px;
@@ -442,7 +458,7 @@ footer a{
     .paver2:hover{
         background-color: #f1eeee;}
     .image2{
-        width: 150px;
+        width: 180px;
         height: 150px;
         border-radius: 15px 0 0 15px;
         object-fit: cover;
@@ -457,6 +473,7 @@ footer a{
         margin-bottom: 10px ;
         font-weight: bold;}
     .activites{
+         width: 100%;
  
     }
     .horizontal {
@@ -464,17 +481,17 @@ footer a{
         flex-direction: row;
         flex-wrap: nowrap;
         padding: auto;
-        margin: 0 auto auto auto;
+        margin: 0 20px 20px 20px ;
         height: auto;
-        width: 700px;
+        width: 65%;
         
     }
     .vertical{
         border-radius: 20px;
         border: 0px;
-        height: 420px;
+        height: 55%;
         box-shadow: 0px 5px 2px 1px #F2F2F2;
-        margin: auto;
+        margin: 0 auto;
         padding: auto;
     }
     .vertical:hover{
@@ -490,19 +507,19 @@ footer a{
         margin: 0px;   
     }
     .verti {
-        height: 165px;
+        height:95%;
         border: 0px;
         border-radius: 15px;
         box-shadow: 0px 5px 2px 1px #F2F2F2;
-        margin: auto auto 30px auto;
+        margin-left: 20px;
         padding: auto;
         
     }
     .verti:hover{
         background-color: #f1eeee;}
     .img4 {
-        width: 300px;
-        height: 390px;
+        width: 100%;
+        height: 90%;
         border-radius:15px 15px 0 0;
         object-fit: cover;
         margin: 0 auto;
@@ -511,43 +528,24 @@ footer a{
     figcaption{
         margin-left: 20px;
         height: 56px;
-    }
-    
-    /* footer */
-    
-      
+    }     
 }
-
-
-
 
 
 /* screen intermediaire */
 
 
-
 @media all and (min-width: 1000px) and (max-width: 1100px)
 {
+    .log{
+        margin: 10px;
+    }
     body{
         background-color:white;
         color: black;
         @font-family:"raleway";
         font-size: 1em;
         margin: 0px;}
-    
-    /* le header */
-    
-    
-    
-    /* barre de recherche */
-    
-    
-    
-    /* filtre de navigation */
-    
-    
-    
-    /* les cartes d'hébergement*/
     
     .grosbloc{
         display: flex;
@@ -620,7 +618,7 @@ footer a{
     
     aside{
         background-color: #f2f2f2;
-        width: 90%;
+        width: 98%;
         height: auto;
         border-radius: 20px;
         margin:30px auto auto auto}
@@ -640,23 +638,23 @@ footer a{
         border-radius: 30px;}
     .paver2{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         border: solid 3px white;
         border-radius: 15px;
-        width: 600px;
-        height: 230px;
+        width: 95%;
+        height: 290px;
         background-color: white;
         margin: 40px auto 30px auto;
         box-shadow: 0px 5px 2px 1px #ecebeb;}
     .paver2:hover{
         background-color: #f1eeee;}
     .image2{
-        width: 300px;
-        height: 230px;
-        border-radius: 15px 0 0 15px;
+        width: 100%;
+        height: 180px;
+        border-radius: 15px 15px 0 0;
         object-fit: cover;
     }
-    .prix{ margin-bottom: 60px;}
+    .prix{ margin-bottom: 30px;}
     
     /* section activités à Marseille*/
     
@@ -676,7 +674,6 @@ footer a{
         margin: 0 auto;
         height: auto;
         width: 630px;
-        
     }
     .vertical{
         border-radius: 20px;
@@ -706,7 +703,6 @@ footer a{
         box-shadow: 0px 5px 2px 1px #F2F2F2;
         margin: 0 10px 0 10px;
         padding: auto;
-        
     }
     .verti:hover{
         background-color: #f1eeee;}
@@ -722,22 +718,15 @@ footer a{
         margin-left: 20px;
         height: 40px;
     }
-    
-    /* footer */
-
 }
 
-
-
-
-
-
-
-
-
-
-@media all and (min-width: 840px) and (max-width: 1000px)
+/* responsive ecran taille moyenne */ 
+@media all and (min-width: 858px) and (max-width: 1000px)
 {
+
+    .log{
+        margin-left: 5px;
+    }
     .grosbloc{
         display: flex;
         flex-direction: column-reverse;
@@ -809,7 +798,7 @@ footer a{
     
     aside{
         background-color: #f2f2f2;
-        width: 90%;
+        width: 98%;
         height: auto;
         border-radius: 20px;
         margin:30px auto auto auto}
@@ -829,23 +818,23 @@ footer a{
         border-radius: 30px;}
     .paver2{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         border: solid 3px white;
         border-radius: 15px;
-        width: 600px;
-        height: 230px;
+        width: 98%;
+        height: 290px;
         background-color: white;
         margin: 40px auto 30px auto;
         box-shadow: 0px 5px 2px 1px #ecebeb;}
     .paver2:hover{
         background-color: #f1eeee;}
     .image2{
-        width: 300px;
-        height: 230px;
-        border-radius: 15px 0 0 15px;
+        width: 100%;
+        height: 180px;
+        border-radius: 15px 15px 0 0;
         object-fit: cover;
     }
-    .prix{ margin-bottom: 60px;}
+    .prix{ margin-bottom: 30px;}
 
     /*activites a marseille*/
     .acmar{
@@ -871,7 +860,7 @@ footer a{
         border: 0px;
         height: 330px;
         box-shadow: 0px 5px 2px 1px #F2F2F2;
-        margin: auto;
+        margin: 0 auto;
         padding: auto;
     }
     .vertical:hover{
@@ -913,11 +902,11 @@ footer a{
 }
 
 
-
-
-
-@media all and (min-width: 687px) and (max-width: 840px)
+@media all and (min-width: 660px) and (max-width: 857px)
 {
+    .log{
+        margin-left: 5px;
+    }
     .grosbloc{
         display: flex;
         flex-direction: column-reverse;
@@ -925,43 +914,41 @@ footer a{
         width: 100%;}
     .section1{
         width: 100%;
-        height: 950px;
+        height: 910px;
         margin: 15px auto;
         background-color: #f2f2f2;
         border-radius: 15px;}
     .hébergements {
         width: 100%;
-        height: 2000px;
+        height: 760px;
         display: flex;
         flex-wrap:nowrap;
-        flex-direction:column;
+        flex-direction:row;
     }
     .deuxieme{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        width: 100%;
-        height: 900px;
+        width: 50%;
+        height: 500px;
         margin:0 auto;
         padding: auto;
-        
-    
     }
     .paver {
         border: solid;
         border-radius: 15px;
         border-color: white;
-        margin: 10px auto;
+        margin: 10px 10px;
         padding: auto;
         background-color: white;
-        height: 250px;
-        width: 400px;
+        height: 220px;
+        width: 95%;
         box-shadow: 0px 5px 2px 1px #ecebeb;}
     .paver:hover{
         background-color: #f1eeee;}
     .image{
-        width: 400px;
-        height: 170px;
+        width: 100%;
+        height: 70%;
         border-radius: 15px 15px 0 0;
         object-fit: cover;
     }
@@ -973,7 +960,431 @@ footer a{
         flex-direction: row;
         margin: 0 auto;
         padding: auto;
-        height: 900px;
+        height: 500px;
+        width: 50%;
+    }
+    h3{
+        margin: 0px;
+        padding: 0px;
+        font-weight: bold;}
+    .voirplus{
+        padding: 0px;
+        margin-bottom: 25px  ;
+        font-weight: bold;}
+    
+    /* deuxieme contenaire*/
+    
+    aside{
+        background-color: #f2f2f2;
+        width: 98%;
+        height: auto;
+        border-radius: 20px;
+        margin:auto}
+    h2{
+        margin-left: 30px;
+        padding: 0px;
+        font-weight: bold;}
+    .fa-chart-line{
+        color: black;
+         margin-left: 80px;}
+    .mvp{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color:#F2F2F2 ;
+        width: 100%;
+        border-radius: 30px;}
+    .paver2{
+        display: flex;
+        flex-direction: column;
+        border: solid 3px white;
+        border-radius: 15px;
+        width: 98%;
+        height: 290px;
+        background-color: white;
+        margin: 40px auto 30px auto;
+        box-shadow: 0px 5px 2px 1px #ecebeb;}
+    .paver2:hover{
+        background-color: #f1eeee;}
+    .image2{
+        width: 100%;
+        height: 180px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+    }
+
+    .prix{ margin-bottom:30px;}
+
+     /*activites a marseille*/
+    .acmar{
+        margin-left: 30px;
+        margin-top: 60px;
+        margin-bottom: 10px ;
+        font-weight: bold;}
+    .activites{
+        width: 100%;
+ 
+    }
+    .horizontal {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: auto;
+        margin: 0 auto auto auto;
+        height: auto;
+        width: 65%;
+        
+    }
+    .vertical{
+        border-radius: 20px;
+        border: 0px;
+        height: 330px;
+        width: 200px;
+        box-shadow: 0px 5px 2px 1px #F2F2F2;
+        margin: auto;
+        padding: auto;
+    }
+    .vertical:hover{
+        background-color: #f1eeee;}
+    .img3{
+        width: 200px;
+        height: 300px;
+        border-radius:15px 15px 0 0;
+        object-fit: cover;
+    }
+    h4{
+        padding: 0px;
+        margin: 0px;   
+    }
+    .verti {
+        height: 165px;
+        border: 0px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 2px 1px #F2F2F2;
+        margin: auto;
+        padding: auto;
+        
+    }
+    .verti:hover{
+        background-color: #f1eeee;}
+    .img4 {
+        width: 220px;
+        height: 300px;
+        border-radius:15px 15px 0 0;
+        object-fit: cover;
+        margin: 0 auto;
+        padding: 0;
+    }
+    figcaption{
+        margin-left: 20px;
+        height: 56px;
+    }  
+ 
+}
+
+
+@media all and (min-width: 613px) and (max-width: 659px)
+{
+    /*head */
+    header{
+        margin:0 20px 0 0px;
+        padding:0;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;}
+    header a{
+        color: black;
+        width: 120px;
+        height: 80px;
+        text-align:center;
+        text-decoration: none;
+        padding-top: 45px;}
+    header a:hover{ color: #0065FC;}  
+    #logo{
+        width: 90px;
+        height: 50px;
+        margin-left: 30px;
+        padding-top: 30px;}
+    #menu{
+        display: inline-flex;
+        margin-left: 30px;}
+    .menu:hover{
+        border-top: solid 3px #0065FC;}
+    .lien{
+        display: block;}
+    .lien2{
+        text-decoration: none;
+        color: #0065FC;
+        font-weight: bold;
+        padding-top: 45px;
+        display: block;
+        font-weight: bold;}
+    .lien2:hover{ 
+        font-size: 1.2em ;}
+    .log{
+        margin-left: 5px;
+    }
+
+    /*conteneur1*/
+
+    .grosbloc{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: stretch;
+        width: 100%;}
+    .section1{
+        width: 100%;
+        height: 910px;
+        margin: 15px auto;
+        background-color: #f2f2f2;
+        border-radius: 15px;}
+    .hébergements {
+        width: 100%;
+        height: 760px;
+        display: flex;
+        flex-wrap:nowrap;
+        flex-direction:row;
+    }
+    .deuxieme{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 50%;
+        height: 500px;
+        margin:0 auto;
+        padding: auto;
+    }
+    .paver {
+        border: solid;
+        border-radius: 15px;
+        border-color: white;
+        margin: 10px 10px;
+        padding: auto;
+        background-color: white;
+        height: 220px;
+        width: 95%;
+        box-shadow: 0px 5px 2px 1px #ecebeb;}
+    .paver:hover{
+        background-color: #f1eeee;}
+    .image{
+        width: 100%;
+        height: 70%;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+    }
+    figcaption i {
+        color: #0065FC;}
+    .trois{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0 auto;
+        padding: auto;
+        height: 500px;
+        width: 50%;
+    }
+    h3{
+        margin: 0px;
+        padding: 0px;
+        font-weight: bold;}
+    .voirplus{
+        padding: 0px;
+        margin-bottom: 25px  ;
+        font-weight: bold;}
+    
+    /* deuxieme contenaire*/
+    
+    aside{
+        background-color: #f2f2f2;
+        width: 98%;
+        height: auto;
+        border-radius: 20px;
+        margin:auto}
+    h2{
+        margin-left: 30px;
+        padding: 0px;
+        font-weight: bold;}
+    .fa-chart-line{
+        color: black;
+         margin-left: 80px;}
+    .mvp{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color:#F2F2F2 ;
+        width: 100%;
+        border-radius: 30px;}
+    .paver2{
+        display: flex;
+        flex-direction: column;
+        border: solid 3px white;
+        border-radius: 15px;
+        width: 98%;
+        height: 290px;
+        background-color: white;
+        margin: 40px auto 30px auto;
+        box-shadow: 0px 5px 2px 1px #ecebeb;}
+    .paver2:hover{
+        background-color: #f1eeee;}
+    .image2{
+        width: 100%;
+        height: 180px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+    }
+
+    .prix{ margin-bottom:30px;}
+}
+
+/* mobile */
+
+@media all and (min-width: 300px) and (max-width: 612px)
+{
+    /*head*/
+
+    header{
+        margin:0 20px 0 0px;
+        padding:0;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;}
+    #inscription{
+        display: none;
+    }
+    #mobile{
+        display: inline-block;
+        padding:0;
+        margin-left: 50%;
+        align-content: center;
+    }
+        
+    header a{
+        color: black;
+        width: 180px;
+        height: 80px;
+        text-align:center;
+        text-decoration: none;
+        padding-top: 45px;}
+    header a:hover{ color: #0065FC;}  
+    #logo{
+        width: 90px;
+        height: 50px;
+        margin-left: 30px;
+        padding-top: 30px;}
+    #menu{
+        display: inline-flex;
+        margin-left: 30px;
+    }
+    .menu{
+        width: 50%;
+        border-bottom: solid 3px #F2F2F2;
+        height: 90px;
+    }
+    .menu:hover{
+        border-bottom: solid 2px #0065FC;
+    }
+    .lien:hover{
+        border-top: none;
+    }
+
+    .lien{
+        display: block;}
+    .lien3{
+        text-decoration: none;
+        color: #0065FC;
+        font-weight: bold;
+        padding-top: 20px;
+        margin-bottom: 30px;
+        font-weight: bold;}
+    .lien2:hover{ 
+        font-size: 1.2em ;}
+    .log{
+        margin-left: 5px;
+    }
+
+    /*recherche*/
+
+    .bouton{
+        display: none;
+    }
+    .espaceRecherche{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: 30px;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+    form{
+        width: 80%;
+        margin: 0;
+    }
+    .fa-search{
+        display: inline-block;
+        border-radius:0 5px 5px 0;
+        background-color: #0065FC;
+        color: white;
+        padding: 8px;
+    }
+
+    /*filtre*/
+
+    .grosbloc{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: stretch;
+        width: 100%;}
+    .section1{
+        width: 100%;
+        height: 1600px;
+        margin: 15px auto;
+        background-color: #f2f2f2;
+        border-radius: 15px;}
+    .hébergements {
+        width: 100%;
+        height: 1500px;
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+    }
+    .deuxieme{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: 500px;
+        margin:0 auto;
+        padding: auto;
+    }
+    .paver {
+        border: solid;
+        border-radius: 15px;
+        border-color: white;
+        margin: 10px 10px;
+        padding: auto;
+        background-color: white;
+        height: 220px;
+        width: 95%;
+        box-shadow: 0px 5px 2px 1px #ecebeb;}
+    .paver:hover{
+        background-color: #f1eeee;}
+    .image{
+        width: 100%;
+        height: 70%;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+    }
+    figcaption i {
+        color: #0065FC;}
+    .trois{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: auto;
+        padding: auto;
+        height: 500px;
         width: 100%;
     }
     h3{
@@ -982,14 +1393,14 @@ footer a{
         font-weight: bold;}
     .voirplus{
         padding: 0px;
-        margin: 25px auto auto 25px ;
+        margin-bottom: 25px  ;
         font-weight: bold;}
     
     /* deuxieme contenaire*/
     
     aside{
         background-color: #f2f2f2;
-        width: 100%;
+        width: 98%;
         height: auto;
         border-radius: 20px;
         margin:auto}
@@ -1012,52 +1423,60 @@ footer a{
         flex-direction: row;
         border: solid 3px white;
         border-radius: 15px;
-        width: 500px;
-        height: 230px;
+        width: 98%;
+        height: 180px;
         background-color: white;
         margin: 40px auto 30px auto;
         box-shadow: 0px 5px 2px 1px #ecebeb;}
     .paver2:hover{
         background-color: #f1eeee;}
     .image2{
-        width: 280px;
-        height: 200px;
+        width: 100%;
+        height: 180px;
         border-radius: 15px 0 0 15px;
         object-fit: cover;
     }
-    .prix{ margin-bottom: 60px;}
 
-    /*activites a marseille*/
+    .prix{ margin-bottom:30px;
+        width: 150px;
+    }
+
+     /*activites a marseille*/
     .acmar{
         margin-left: 30px;
         margin-top: 60px;
         margin-bottom: 10px ;
         font-weight: bold;}
     .activites{
- 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 1800px;
     }
     .horizontal {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-direction: column;
+        flex-wrap: wrap;
         padding: auto;
-        margin: 0 auto auto auto;
-        height: auto;
-        width: 620px;
+        margin: 0;
+        height: 550px;
+        width: 100%;
         
     }
     .vertical{
         border-radius: 20px;
         border: 0px;
         height: 330px;
+        width: 100%;
         box-shadow: 0px 5px 2px 1px #F2F2F2;
-        margin: auto;
-        padding: auto;
+        margin: 0;
+        padding: 0;
     }
     .vertical:hover{
         background-color: #f1eeee;}
     .img3{
-        width: 220px;
+        width: 100%;
         height: 300px;
         border-radius:15px 15px 0 0;
         object-fit: cover;
@@ -1067,37 +1486,33 @@ footer a{
         margin: 0px;   
     }
     .verti {
-        height: 165px;
+        height: 230px;
         border: 0px;
         border-radius: 15px;
         box-shadow: 0px 5px 2px 1px #F2F2F2;
-        margin: auto;
-        padding: auto;
+        margin: 20px 0 0 0 ;
+        padding: 0;
         
     }
     .verti:hover{
         background-color: #f1eeee;}
     .img4 {
-        width: 220px;
-        height: 300px;
+        width: 97%;
+        height: 100%;
         border-radius:15px 15px 0 0;
         object-fit: cover;
-        margin: 0 auto;
+        margin: 20px 0 0 0;
         padding: 0;
     }
     figcaption{
         margin-left: 20px;
         height: 56px;
     }
+    footer {
+        flex-direction: column;
+        height: auto;
+        align-content: space-around;
+    }
+
 
 }
-
-
-
-
-
-
-
-
-@media all and (min-width: 250px) and (max-width: 350px)
-{
