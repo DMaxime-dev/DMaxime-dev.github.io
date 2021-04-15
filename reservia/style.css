@@ -100,6 +100,13 @@ nav a{
     flex-wrap: wrap;
     margin-left: 25px;
 }
+#filtre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+
+}
 .filtre{
     display: flex;
     justify-content:flex-start;
@@ -121,11 +128,13 @@ nav a{
     color: black;
     font-weight: bold;
     margin-top: 15px;}
-
+.element1{
+    margin: 10px 0 20px 0;
+}
 .ut{
     border: solid 2px #D9D9D9;
     border-radius: 28px;
-    margin:20px 11px;
+    margin:20px 25px 22px 25px;
     width: 200px;
     height: 30px;
     background-color: white;
@@ -186,7 +195,6 @@ nav a{
     margin-top: 10px;
     margin-left: 30px;
     margin-right: auto;
-    padding: auto;
     background-color: white;
     height: 210px;
     box-shadow: 0px 5px 2px 1px #ecebeb;}
@@ -276,9 +284,7 @@ h2{
     border: 0px;
     height: 400px;
     box-shadow: 0px 5px 2px 1px #F2F2F2;
-    margin: 0 auto 20px auto;
-    padding: auto;
-}
+    margin: 0 auto 20px auto;}
 .vertical:hover{
     background-color: #f1eeee;}
 .img3{
@@ -295,29 +301,26 @@ h4{
     display: flex;
     flex-direction: column;
     margin: 0 auto 0 auto;
-    height: 400px;
-    padding: auto;
-}
+    height: 400px;}
 .verti {
     height: 190px;
     border: 0px;
     border-radius: 15px;
     box-shadow: 0px 5px 2px 1px #F2F2F2;
-    margin:auto;
-    padding: auto;  
-}
+    margin:auto;}
 
 .verti:hover{
     background-color: #f1eeee;}
 .img4 {
-    height: 110px;
+    height: 150px;
     width: 300px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
+
 .img5{
-    height: 130px;
+    height: 150px;
     width: 300px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
@@ -338,18 +341,15 @@ footer{
     width: 100%;
     margin: 60px 0 0 0;
     padding:40px 0 0 0;}
-footer ul{
-    padding: 0px;
+footer h4{
+    margin-bottom: 20px;
 }
 footer a{
     display: flex;
     flex-direction: column;
     color: black;
     margin-bottom: 12px;
-}
-.bloc{
-    padding: auto;
-}  
+} 
 
 /* responsive*/
 
@@ -358,7 +358,7 @@ footer a{
     body{
         background-color:white;
         color: black;
-        @font-family:"raleway";
+        font-family:"raleway";
         font-size: 1em;
         margin: 0px;}
 
@@ -386,14 +386,12 @@ footer a{
         width: 100%;
         height: 200px;
         margin:0 auto;
-        padding: auto;
     }
     .paver {
         border: solid;
         border-radius: 15px;
         border-color: white;
         margin: auto;
-        padding: auto;
         background-color: white;
         height: 250px;
         width: auto;
@@ -412,7 +410,6 @@ footer a{
         display: flex;
         flex-direction: row;
         margin: auto;
-        padding: auto;
         height: 200px;
         width: 100%;
     }
@@ -439,7 +436,7 @@ footer a{
         font-weight: bold;}
     .fa-chart-line{
         color: black;
-         margin-left: 80px;}
+        margin-left: 80px;}
     .mvp{
         display: flex;
         flex-wrap: nowrap;
@@ -469,7 +466,6 @@ footer a{
     /* section activités à Marseille*/
     
     .acmar{
-        margin-left: 60px auto 10px 30px;
         font-weight: bold;}
     .activites{
          width: 100%;
@@ -480,7 +476,6 @@ footer a{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        padding: auto;
         margin: 0;
         margin-right: 20px;
         height: 48%;
@@ -502,7 +497,6 @@ footer a{
         height: 45%;
         box-shadow: 0px 5px 2px 1px #F2F2F2;
         margin: 0 auto;
-        padding: auto;
     }
     .vertical:hover{
         background-color: #f1eeee;}
@@ -524,8 +518,6 @@ footer a{
         box-shadow: 0px 5px 2px 1px #F2F2F2;
         margin-left: 20px;
         margin-top: 0;
-        padding: auto;
-        
     }
     .verti:hover{
         background-color: #f1eeee;}
@@ -559,7 +551,7 @@ footer a{
     body{
         background-color:white;
         color: black;
-        @font-family:"raleway";
+        font-family:"raleway";
         font-size: 1em;
         margin: 0px;}
     
@@ -588,16 +580,12 @@ footer a{
         width: 100%;
         height: 200px;
         margin:0 auto;
-        padding: auto;
-        
-    
     }
     .paver {
         border: solid;
         border-radius: 15px;
         border-color: white;
         margin: 10px auto;
-        padding: auto;
         background-color: white;
         height: 250px;
         width: 400px;
@@ -617,7 +605,6 @@ footer a{
         flex-wrap: wrap;
         flex-direction: row;
         margin: 0 auto;
-        padding: auto;
         height: 200px;
         width: 100%;
     }
@@ -674,7 +661,7 @@ footer a{
     /* activites à marseille*/
 
     .acmar{
-        margin-left: 60px auto 10px 30px;
+        
         font-weight: bold;}
     .activites{
          width: 100%;
@@ -685,7 +672,6 @@ footer a{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        padding: auto;
         margin: 0;
         margin-right: 20px;
         height: 48%;
@@ -707,7 +693,6 @@ footer a{
         height: 45%;
         box-shadow: 0px 5px 2px 1px #F2F2F2;
         margin: 0 auto;
-        padding: auto;
     }
     .vertical:hover{
         background-color: #f1eeee;}
@@ -728,9 +713,7 @@ footer a{
         border-radius: 15px;
         box-shadow: 0px 5px 2px 1px #F2F2F2;
         margin-left: 20px;
-        margin-top: 0;
-        padding: auto;
-        
+        margin-top: 0; 
     }
     .verti:hover{
         background-color: #f1eeee;}
@@ -785,16 +768,12 @@ footer a{
         width: 100%;
         height: 200px;
         margin:0 auto;
-        padding: auto;
-        
-    
     }
     .paver {
         border: solid;
         border-radius: 15px;
         border-color: white;
         margin: 10px auto;
-        padding: auto;
         background-color: white;
         height: 250px;
         width: 400px;
@@ -814,7 +793,6 @@ footer a{
         flex-wrap: wrap;
         flex-direction: row;
         margin: 0 auto;
-        padding: auto;
         height: 200px;
         width: 100%;
     }
@@ -872,7 +850,6 @@ footer a{
     /*activités à marseille*/
 
     .acmar{
-        margin-left: 60px auto 10px 30px;
         font-weight: bold;}
     .activites{
          width: 100%;
@@ -883,7 +860,6 @@ footer a{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        padding: auto;
         margin: 0;
         margin-right: 20px;
         height: 48%;
@@ -905,7 +881,6 @@ footer a{
         height: 45%;
         box-shadow: 0px 5px 2px 1px #F2F2F2;
         margin: 0 auto;
-        padding: auto;
     }
     .vertical:hover{
         background-color: #f1eeee;}
@@ -927,8 +902,6 @@ footer a{
         box-shadow: 0px 5px 2px 1px #F2F2F2;
         margin-left: 20px;
         margin-top: 0;
-        padding: auto;
-        
     }
     .verti:hover{
         background-color: #f1eeee;}
@@ -952,7 +925,15 @@ footer a{
 
 
 @media all and (min-width: 660px) and (max-width: 857px)
-{
+{   
+    
+     /* FILTRE DE NAVIGATYION*/
+   .ut{
+    margin-left: 0;
+    }
+    .element1{
+        margin-right: 30px;
+    }
     .log{
         margin-left: 5px;
     }
@@ -981,14 +962,12 @@ footer a{
         width: 50%;
         height: 500px;
         margin:0 auto;
-        padding: auto;
     }
     .paver {
         border: solid;
         border-radius: 15px;
         border-color: white;
         margin: 10px 10px;
-        padding: auto;
         background-color: white;
         height: 220px;
         width: 95%;
@@ -1008,7 +987,6 @@ footer a{
         flex-wrap: wrap;
         flex-direction: row;
         margin: 0 auto;
-        padding: auto;
         height: 500px;
         width: 50%;
     }
@@ -1066,7 +1044,6 @@ footer a{
 
      /*activites a marseille*/
     .acmar{
-        margin-left: 60px auto 10px 30px;
         font-weight: bold;}
     .activites{
          width: 100%;
@@ -1077,7 +1054,6 @@ footer a{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        padding: auto;
         margin: 0;
         margin-right: 20px;
         height: 48%;
@@ -1099,7 +1075,6 @@ footer a{
         height: 45%;
         box-shadow: 0px 5px 2px 1px #F2F2F2;
         margin: 0 auto;
-        padding: auto;
     }
     .vertical:hover{
         background-color: #f1eeee;}
@@ -1120,9 +1095,7 @@ footer a{
         border-radius: 15px;
         box-shadow: 0px 5px 2px 1px #F2F2F2;
         margin-left: 20px;
-        margin-top: 0;
-        padding: auto;
-        
+        margin-top: 0; 
     }
     .verti:hover{
         background-color: #f1eeee;}
@@ -1190,6 +1163,11 @@ footer a{
         margin-left: 5px;
     }
 
+    /* FILTRE DE NAVIGATYION*/
+   .ut{
+       margin-left: 0;
+   }
+
     /*conteneur1*/
 
     .grosbloc{
@@ -1217,14 +1195,12 @@ footer a{
         width: 50%;
         height: 500px;
         margin:0 auto;
-        padding: auto;
     }
     .paver {
         border: solid;
         border-radius: 15px;
         border-color: white;
         margin: 10px 10px;
-        padding: auto;
         background-color: white;
         height: 220px;
         width: 95%;
@@ -1244,7 +1220,6 @@ footer a{
         flex-wrap: wrap;
         flex-direction: row;
         margin: 0 auto;
-        padding: auto;
         height: 500px;
         width: 50%;
     }
@@ -1303,7 +1278,6 @@ footer a{
 /*activiés à Marseille*/
 
     .acmar{
-        margin-left: 60px auto 10px 30px;
         font-weight: bold;}
     .activites{
          width: 100%;
@@ -1314,7 +1288,6 @@ footer a{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        padding: auto;
         margin: 0;
         margin-right: 20px;
         height: 48%;
@@ -1336,7 +1309,6 @@ footer a{
         height: 45%;
         box-shadow: 0px 5px 2px 1px #F2F2F2;
         margin: 0 auto;
-        padding: auto;
     }
     .vertical:hover{
         background-color: #f1eeee;}
@@ -1358,8 +1330,6 @@ footer a{
         box-shadow: 0px 5px 2px 1px #F2F2F2;
         margin-left: 20px;
         margin-top: 0;
-        padding: auto;
-        
     }
     .verti:hover{
         background-color: #f1eeee;}
@@ -1388,7 +1358,7 @@ footer a{
     /*head*/
 
     header{
-        margin:0 20px 0 0px;
+        margin:0 0 0 0;
         padding:0;
         height: 160px;
         display: flex;
@@ -1420,7 +1390,7 @@ footer a{
         padding-top: 30px;}
     #menu{
         display: inline-flex;
-        margin-left: 30px;
+        margin-left: 0px;
     }
     .menu{
         width: 50%;
@@ -1434,14 +1404,16 @@ footer a{
         border-top: none;
     }
 
-    .lien{
-        display: block;}
     .lien3{
-        text-decoration: none;
         color: #0065FC;
-        font-weight: bold;
-        padding:0 0 50px;
+        padding: 0;
         margin-bottom: 30px;
+    }
+    header div {
+        display: block;
+        align-content:space-between;
+        text-decoration: none;
+        font-weight: bold;
         margin-top: 0;
         font-weight: bold;}
     .lien2:hover{ 
@@ -1451,6 +1423,12 @@ footer a{
     }
 
     /*recherche*/
+    h1{
+        margin:45px 0 11px 10px;
+    }
+    .centreville{
+        margin-left: 10px;
+    }
 
     .bouton{
         display: none;
@@ -1458,8 +1436,7 @@ footer a{
     .espaceRecherche{
         display: flex;
         flex-wrap: nowrap;
-        margin-left: 30px;
-        margin-bottom: 50px;
+        margin:0 0 50px 10px;
         width: 90%;
     }
     form{
@@ -1478,7 +1455,22 @@ footer a{
     }
 
     /*filtre*/
+    .ut{
+        margin-left: 0;
+    }
 
+    .logtexte{
+        margin: 10px 0 40px 10px;
+    }
+    .blocdiv{
+        margin-left: 10px;
+    }
+    .box{
+        margin: 0 0 15px 0;
+    }
+
+
+/*hebergement a marseille*/
     .grosbloc{
         display: flex;
         flex-direction: column-reverse;
@@ -1509,15 +1501,11 @@ footer a{
         width: 100%;
         height: 500px;
         margin:0 auto;
-        padding: auto;
     }
     .paver {
-        border: solid;
+        border: solid white;
         border-radius: 15px;
-        border-color: white;
         margin: 10px 10px;
-        padding: auto;
-        background-color: white;
         height: 220px;
         width: 95%;
         box-shadow: 0px 5px 2px 1px #ecebeb;}
@@ -1536,7 +1524,6 @@ footer a{
         flex-wrap: wrap;
         flex-direction: row;
         margin: auto;
-        padding: auto;
         height: 500px;
         width: 100%;
     }
@@ -1556,14 +1543,16 @@ footer a{
         width: 100%;
         height: auto;
         border-radius: 0;
-        margin:0}
+        margin:0 0 40px 0;}
     h2{
-        margin-left: 30px;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
         padding: 0px;
         font-weight: bold;}
     .fa-chart-line{
         color: black;
-         margin-left: 80px;}
+         margin-left: 40px;}
     .mvp{
         display: flex;
         flex-wrap: wrap;
@@ -1574,18 +1563,17 @@ footer a{
     .paver2{
         display: flex;
         flex-direction: row;
-        border: solid 3px white;
         border-radius: 15px;
-        width: 95%;
-        height: 180px;
+        width: 90%;
+        height: 170px;
         background-color: white;
-        margin: 40px auto 30px auto;
+        margin: 30px auto 10px auto;
         box-shadow: 0px 5px 2px 1px #ecebeb;}
     .paver2:hover{
         background-color: #f1eeee;}
     .image2{
         width: 100%;
-        height: 180px;
+        height: 100%;
         border-radius: 15px 0 0 15px;
         object-fit: cover;
     }
@@ -1595,7 +1583,6 @@ footer a{
     }
 /* activite à marseille*/
     .acmar{
-        margin-left: 60px auto 10px 30px;
         font-weight: bold;}
     .activites{
         display: flex;
@@ -1636,13 +1623,12 @@ footer a{
         height: 45%;
         box-shadow: 0px 5px 2px 1px #F2F2F2;
         margin: 0 auto;
-        padding: auto;
     }
     .vertical:hover{
         background-color: #f1eeee;}
     .img3{
         width: 100%;
-        height: 90%;
+        height: 85%;
         border-radius:15px 15px 0 0;
         object-fit: cover;
     }
@@ -1658,14 +1644,13 @@ footer a{
         box-shadow: 0px 5px 2px 1px #F2F2F2;
         margin-left: 20px;
         margin-top: 0;
-        padding: auto;
         
     }
     .verti:hover{
         background-color: #f1eeee;}
     .img4 {
         width: 100%;
-        height: 90%;
+        height: 85%;
         border-radius:15px 15px 0 0;
         object-fit: cover;
         margin: 0 auto;
@@ -1673,99 +1658,24 @@ footer a{
     }
     .img5{
         width: 100%;
-        height: 90%;
+        height: 85%;
         margin: 20px 0;
         border-radius:15px 15px 0 0;
         object-fit: cover;
         margin: 0 auto;
         padding: 0;}
     #f.verti{
-        margin-left: 10px;
-     
-    }
+        margin-left: 10px;}
     #e.verti{
-        margin-left: 10px;
-       
-    }
-       
-    figcaption{
-        margin-left: 20px;
-        height: 10%;
-    }
-
-     /*activites a marseille*/
-
-
-    /*.acmar{
-        margin-left: 30px;
-        margin-top: 60px;
-        margin-bottom: 10px ;
-        font-weight: bold;}
-    .activites{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 1200px;
-    }
-    .horizontal {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: auto;
-        margin: 0;
-        height: 35%%;
-        width: 100%;
-        
-    }
-    .vertical{
-        border-radius: 20px;
-        border: 0px;
-        height: 17%;
-        width: 100%;
-        box-shadow: 0px 5px 2px 1px #F2F2F2;
-        margin: 0;
-        padding: 0;
-    }
-    .vertical:hover{
-        background-color: #f1eeee;}
-    .img3{
-        width: 100%;
-        height: 300px;
-        border-radius:15px 15px 0 0;
-        object-fit: cover;
-    }
-    h4{
-        padding: 0px;
-        margin: 0px;   
-    }
-    .verti {
-        height: 230px;
-        border: 0px;
-        border-radius: 15px;
-        box-shadow: 0px 5px 2px 1px #F2F2F2;
-        margin: 20px 0 0 0 ;
-        padding: 0;
-        
-    }
-    .verti:hover{
-        background-color: #f1eeee;}
-    .img4 {
-        width: 97%;
-        height: 100%;
-        border-radius:15px 15px 0 0;
-        object-fit: cover;
-        margin: 20px 0 0 0;
-        padding: 0;
-    }
-    .img5{
-        width: 100%;
+        margin-left: 10px;  
     }
     figcaption{
         margin-left: 20px;
-        height: 56px;
-    }*/
+        height: 15%;
+    }
+
     /*FOOTER*/
+
     footer {
         flex-direction: column;
         height: auto;
@@ -1773,16 +1683,8 @@ footer a{
     }
     footer div{
         margin-left:40px;
+        margin-bottom: 40px;
 
     }
 
-    @media all and (min-width: 280px) and (max-width: 384px)
-{
-    .lien3{
-        text-decoration: none;
-        color: #0065FC;
-        font-weight: bold;
-        padding:0 0 50px;
-        margin: 30%;
-        font-weight: bold;}
 }
