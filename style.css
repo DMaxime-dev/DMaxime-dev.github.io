@@ -1560,10 +1560,10 @@ footer a{
     .search{
         width: 150px;
     }
-    input{
-        border-radius: 0;
+    .search{
+        border-radius:0;
     }
-    input [type="search"]{
+    .search [type="search"]{
         -webkit-appearance:none;
     }
     form i {
