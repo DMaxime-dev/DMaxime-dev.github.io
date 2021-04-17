@@ -22,7 +22,7 @@ header a{
     text-decoration: none;
     padding-top: 45px;}
 header a:hover{ color: #0065FC;} 
-#mobile{
+.headblock{
     display: none;
 }
 #logo{
@@ -98,7 +98,7 @@ nav a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 25px;
+    margin-left: 30px;
 }
 #filtre{
     display: flex;
@@ -181,6 +181,9 @@ nav a{
     height: 520px;
     display: flex;
     flex-wrap:wrap;}
+#hebergements.section1{
+    margin-left: 30px;
+}
 .fa-star{
     font-size: 0.7em;
 }
@@ -278,6 +281,7 @@ h2{
     width: 98%;
     height: auto;
     margin: auto;
+    margin-left: 0;
 }
 .vertical{
     border-radius: 20px;
@@ -335,12 +339,13 @@ figcaption{
 
 footer{
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     background-color: #f2f2f2;
     height: 200px;
     width: 100%;
     margin: 60px 0 0 0;
     padding:40px 0 0 0;}
+
 footer h4{
     margin-bottom: 20px;
 }
@@ -349,7 +354,10 @@ footer a{
     flex-direction: column;
     color: black;
     margin-bottom: 12px;
-} 
+}
+.foot{
+    margin-left: 30px;
+}
 
 /* responsive      */
 
@@ -426,7 +434,7 @@ footer a{
     
     aside{
         background-color: #f2f2f2;
-        width: 98%;
+        width: 96%;
         height: auto;
         border-radius: 20px;
         margin:30px auto}
@@ -448,16 +456,16 @@ footer a{
         flex-direction: row;
         border: solid 3px white;
         border-radius: 15px;
-        width: 360px;
-        height: 150px;
+        width: 355px;
+        height: 145px;
         background-color: white;
         margin: 40px auto 30px auto;
         box-shadow: 0px 5px 2px 1px #ecebeb;}
     .paver2:hover{
         background-color: #f1eeee;}
     .image2{
-        width: 180px;
-        height: 150px;
+        width: 175px;
+        height: 145px;
         border-radius: 15px 0 0 15px;
         object-fit: cover;
     }
@@ -621,7 +629,7 @@ footer a{
     
     aside{
         background-color: #f2f2f2;
-        width: 98%;
+        width: 95%;
         height: auto;
         border-radius: 20px;
         margin:30px auto auto auto}
@@ -739,6 +747,27 @@ footer a{
 /* responsive ecran taille moyenne */ 
 @media all and (min-width: 858px) and (max-width: 1000px)
 {
+    /*head*/
+    #logo{
+        margin-left: 10px;
+    }
+    h1{
+        margin-left: 10px;
+    }
+    .centreville{
+        margin-left: 10px;
+    }
+    .espaceRecherche{
+        margin-left: 10px;
+    }
+    .blocdiv{
+        margin-left: 10px;
+    }
+    .logtexte{
+        margin-left: 10px;
+    }
+
+    /*hébergement a marseille*/
 
     .log{
         margin-left: 5px;
@@ -760,6 +789,9 @@ footer a{
         display: flex;
         flex-wrap:nowrap;
         flex-direction:row;
+    }
+    #hebergements.section1{
+        margin-left: 10px;
     }
     .deuxieme{
         display: flex;
@@ -814,7 +846,7 @@ footer a{
         border-radius: 20px;
         margin:30px auto auto auto}
     h2{
-        margin-left: 30px;
+        margin-left: 10px;
         padding: 0px;
         font-weight: bold;}
     .fa-chart-line{
@@ -926,8 +958,27 @@ footer a{
 
 @media all and (min-width: 660px) and (max-width: 857px)
 {   
-    
+    /* head*/
+    #logo{
+        margin-left: 10px;
+    }
+    h1{
+        margin-left: 10px;
+    }
+    .centreville{
+        margin-left: 10px;
+    }
+    .espaceRecherche{
+        margin-left: 10px;
+    }
+
      /* FILTRE DE NAVIGATYION*/
+     .blocdiv{
+         margin-left: 10px;
+     }
+     .logtexte{
+         margin-left: 10px;
+     }
    .ut{
     margin-left: 0;
     }
@@ -962,6 +1013,9 @@ footer a{
         display: flex;
         flex-wrap:nowrap;
         flex-direction:row;
+    }
+    #hebergements.section1{
+        margin-left: 10px;
     }
     .deuxieme{
         display: flex;
@@ -1016,7 +1070,7 @@ footer a{
         border-radius: 20px;
         margin:auto}
     h2{
-        margin-left: 30px;
+        margin-left: 10px;
         padding: 0px;
         font-weight: bold;}
     .fa-chart-line{
@@ -1051,6 +1105,9 @@ footer a{
     .prix{ margin-bottom:30px;}
 
      /*activites a marseille*/
+    #activites.acmar{
+        margin-left: 10px;
+    }
     .acmar{
         font-weight: bold;}
     .activites{
@@ -1123,7 +1180,10 @@ footer a{
         margin-left: 20px;
         height: 17%;
     }
-   
+    footer div{
+        margin-left: 10px;
+    }
+
  
 }
 
@@ -1149,7 +1209,7 @@ footer a{
     #logo{
         width: 90px;
         height: 50px;
-        margin-left: 30px;
+        margin-left: 10px;
         padding-top: 30px;}
     #menu{
         display: inline-flex;
@@ -1172,11 +1232,26 @@ footer a{
     }
 
     /* FILTRE DE NAVIGATYION*/
+    h1{
+        margin-left: 10px;
+    }
+    .centreville{
+        margin-left: 10px;
+    }
+    .espaceRecherche{
+        margin-left: 10px;
+    }
    .ut{
        margin-left: 0;
    }
    .box{
     margin: 0 0 15px 0;
+    }
+    .blocdiv{
+        margin-left: 10px;
+    }
+    .logtexte{
+        margin-left: 10px;
     }
 
     /*conteneur1*/
@@ -1198,6 +1273,9 @@ footer a{
         display: flex;
         flex-wrap:nowrap;
         flex-direction:row;
+    }
+    #hebergements.section1{
+        margin-left: 10px;
     }
     .deuxieme{
         display: flex;
@@ -1238,9 +1316,13 @@ footer a{
         margin: 0px;
         padding: 0px;
         font-weight: bold;}
+    #activites.acmar{
+        margin-left: 10px;
+    }
     .voirplus{
         padding: 0px;
-        margin-bottom: 25px  ;
+        margin-bottom: 25px;
+        margin-left: 10px;
         font-weight: bold;}
     
     /* deuxieme contenaire*/
@@ -1252,7 +1334,7 @@ footer a{
         border-radius: 20px;
         margin:auto}
     h2{
-        margin-left: 30px;
+        margin-left: 10px;
         padding: 0px;
         font-weight: bold;}
     .fa-chart-line{
@@ -1360,18 +1442,21 @@ footer a{
         margin-left: 20px;
         height: 17%;
     }
+    footer div{
+        margin-left: 10px;
+    }
 }
 
 /* mobile */
 
-@media all and (min-width: 300px) and (max-width: 612px)
+@media all and (min-width: 280px) and (max-width: 612px)
 {
     /*head*/
 
     header{
-        margin:0 0 0 0;
+        margin:0;
         padding:0;
-        height: 160px;
+        height: 100px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1379,11 +1464,15 @@ footer a{
     #inscription{
         display: none;
     }
-    #mobile{
-        display: inline-block;
-        padding:0;
-        margin-left: 50%;
-        align-content: center;
+    #mobilis{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 45px;
+    }
+    .headblock{
+        display:flex;
+        padding: 50px 0 0 0;
     }
         
     header a{
@@ -1397,11 +1486,16 @@ footer a{
     #logo{
         width: 90px;
         height: 50px;
-        margin-left: 30px;
+        margin-left: 10px;
         padding-top: 30px;}
     #menu{
-        display: inline-flex;
-        margin-left: 0px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0px;
+    }
+    .lien{
+        margin: 0;
     }
     .menu{
         width: 50%;
@@ -1419,6 +1513,8 @@ footer a{
         color: #0065FC;
         padding: 0;
         margin-bottom: 30px;
+        text-align: right;
+        margin-right: 10px;
     }
     header div {
         display: block;
@@ -1464,6 +1560,20 @@ footer a{
     .search{
         width: 150px;
     }
+    input{
+        border-radius: 0;
+    }
+    input [type="search"]{
+        -webkit-appearance:none;
+    }
+    form i {
+        background-color: #F2F2F2;
+        width: 20px;
+        height: 25px;
+        border-radius: 10px 0 0 10px;
+        padding-left: 12px;
+        padding-top: 10px;
+        padding-bottom: 5px;}
 
     /*filtre*/
     .ut{
@@ -1499,7 +1609,9 @@ footer a{
         display: flex;
         flex-wrap:wrap;
         flex-direction:column;
-        margin: 0;
+        margin: 0;}
+    h5{
+        margin-bottom: 4px;
     }
     #hebergements.section1{
         background-color: white;
@@ -1539,12 +1651,16 @@ footer a{
         width: 100%;
     }
     h3{
-        margin: 0px;
+        margin-left: 0px;
         padding: 0px;
         font-weight: bold;}
+    #activites.acmar{
+        margin-left: 10px;
+    }
     .voirplus{
         padding: 0px;
-        margin-bottom: 25px  ;
+        margin-bottom: 25px;
+        margin-left: 10px;
         font-weight: bold;}
     
     /* deuxieme contenaire*/
@@ -1558,7 +1674,7 @@ footer a{
     h2{
         display: flex;
         flex-wrap: nowrap;
-        margin: 0;
+        margin-left: 10px;
         padding: 0px;
         font-weight: bold;}
     .fa-chart-line{
@@ -1578,7 +1694,7 @@ footer a{
         width: 90%;
         height: 170px;
         background-color: rgb(255, 254, 254);
-        margin: 30px auto 10px auto;
+        margin: 30px auto 10px 10px;
         box-shadow: 0px 5px 2px 1px #ecebeb;}
     .paver2:hover{
         background-color: #f1eeee;}
@@ -1589,7 +1705,7 @@ footer a{
         object-fit: cover;
     }
 
-    .prix{ margin-bottom:30px;
+    .prix{ margin-bottom:60px;
         width: 150px;
     }
 /* activite à marseille*/
@@ -1692,8 +1808,11 @@ footer a{
         height: auto;
         align-content: space-around;
     }
+    .foot{
+        margin-left: 10px;
+    }
     footer div{
-        margin-left:40px;
+        margin-left:10px;
         margin-bottom: 40px;
 
     }
