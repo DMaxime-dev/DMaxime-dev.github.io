@@ -1456,7 +1456,7 @@ footer a{
     header{
         margin:0;
         padding:0;
-        height: 100px;
+        height: 120px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1468,7 +1468,7 @@ footer a{
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 45px;
+        height: 49px;
     }
     .headblock{
         display:flex;
@@ -1477,7 +1477,6 @@ footer a{
         
     header a{
         color: black;
-        width: 180px;
         height: 80px;
         text-align:center;
         text-decoration: none;
